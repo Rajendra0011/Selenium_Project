@@ -17,7 +17,7 @@ public class Example_1_getMethod {
 		
 		driver.get("https://www.selenium.com");
 		
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 	}
 
 }

@@ -1,0 +1,72 @@
+Locators:
+=================================================
+Locators are used to identify element present on webpage we need to use Locators types.
+
+Following are the Locators Types:
+1) tagName
+2) id
+3) name
+4) className
+5) linktext
+6) partialLinkText
+7) css selector
+8) xpath
+
+=========================================================================================================
+To identify element present on web-page we need to use findElement method 
+findElement method which is present in webDriver interface.
+findElement method will identify the element with help of By.class which contains static methods.
+All By class methods is know as Locator type.
+=========================================================================================================
+class By {
+ public static tagName(String args)
+ 	{
+ 
+ 	}
+}
+=========================================================================================================
+Note 1 : return type of findElement is is WebElement
+All locator types takes String as an argument as an input and return type is a By Class.
+=========================================================================================================
+Note 2: 
+linkText and partialLinkText locators types are used to identify element with the help of linkText and also normal text.
+=========================================================================================================
+								Xpath:
+								======
+Types of Xpath:
+1) Absolute Xpath
+2) Relative Xpath
+3) Xpath By Attribute
+4) Xpath By Text
+5) Xpath By contains()
+6) Xpath By index
+=========================================================================================================
+1) Absolute Xpath:
+=====================
+By using Absolute Xpath we can navigate element from the root of parent to immediate child.
+To achieve absolute xpath we need to use single forward slash(/).
+=========================================================================================================
+2) Relative Xpath
+By using relative Xpath we can navigate element from the root of parent to any child.
+To achieve relative xpath we need to use double forward slash(//).
+=========================================================================================================
+3) Xpath By Attribute
+					Syntax : //tagName[@attributeName="attribute Value"
+					Example : //input[@id='email']
+=========================================================================================================
+4) Xpath By Text
+					Syntax : //tagName[text()='textvalue']
+					Example : //button[text()='Login']
+=========================================================================================================
+5) Xpath By contains()
+
+						Xpath By contains Text
+						Syntax : //tagName[contains(text(),'textValue')]
+						
+						Xpath By contains Attribute :
+						Syntax : //tagName[contains(@attributeName,'attribute value')]
+=========================================================================================================					
+6) Xpath By index
+					syntax : (Xpath)[index]	
+					Example : (//tagName[text()='textvalue'])[1]	
+=========================================================================================================

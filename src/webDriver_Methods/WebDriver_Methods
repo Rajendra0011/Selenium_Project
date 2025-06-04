@@ -19,6 +19,7 @@ Browser Commands :
 10) getPosition()
 11) setSize()
 12) setPosition()
+13) maximize()
 ===================================================================================================================
 Navigation Commands :
 =======================
@@ -52,6 +53,17 @@ It return type is String value.
  driver.quite();
  
  5)getCurrentURL()
+ ===================================================================================================================
+ Difference between get() and navigate()
+===================================================================================================================
+ get()													|					navigate()	
+  ===================================================================================================================		
+ Get method is a part of WeDdriver interface.					navigate method is part of Navigation interface
+ It waits until the web-page fully loaded.						Does not wait for the web-page to fully loaded
+ Get method does not track browser history.						Navigate method does track browser history.
+ Get method does not support refreshing the web-page.			Navigate method does support refreshing the web-page.
+ Get method does not support forward to the next page.			Support moving forward to the next page after navigation 
+====================================================================================================================																back
  
 
 

@@ -1,0 +1,5 @@
+Exceptions_Selenium:
+=================================================
+1) Session Not created Exception
+=================================================
+This exception happens when we download lower/upper version of browser which is installed in our machine.
