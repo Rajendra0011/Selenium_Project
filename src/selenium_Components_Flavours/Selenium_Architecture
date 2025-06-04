@@ -4,28 +4,28 @@ Selenium Architecture:
 					!-----------------!				
 					! Search Context  ! ---> super-most interface
 					!-----------------!
-							!
-							!
-							!-----> extends
-							!
+						!
+						!
+						!-----> extends
+						!
 					!-----------------!				
-					! 	WebDriver  	  !  sub-interface
+					!   WebDriver  	  ! ---------------> sub-interface
 					!-----------------!
-							!
-							!
-							!-------> implements
-							!
-					!---------------------------------!				
-		-----<------! 	Selenium Remote WebDriver  	  ! -------------> Implementation class
-		!			!---------------------------------!				!
-		!															!
-		!								!							!							
-		!				extends			!							!  extends
-		!								!							!
-		!								!							!																											
-!-----------------!				!-----------------!					!-----------------!								              
-! 	Chrome        ! 			! 	FireFox		  !					!	Edge/Internet !
-!-----------------!				!-----------------!					!-----------------!					 		
+						!
+						!
+						!-------> implements
+						!
+				!---------------------------------!				
+		-----<------!-  !  Selenium Remote WebDriver   	  ! -------------> Implementation class
+		!		!---------------------------------!				!
+		!					!
+		!					!				!							
+		!				extends	!				!  extends
+		!					!				!
+		!					!				!																											
+!-----------------!				!-----------------!		!-----------------!								              
+!       Chrome    ! 				!    FireFox	  !		!   Edge/Internet !
+!-----------------!				!-----------------!		!-----------------!					 		
 
 In selenium architecture Search context is super-most interface which contains abstract methods and inherited to
 WebDriver sub Interface.
