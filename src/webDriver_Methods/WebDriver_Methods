@@ -1,0 +1,41 @@
+WebDriver :
+=====================
+WebDriver is an interface which having different kinds of methods used to perform operation on browser.
+===================================================================================================================
+
+Following are the WebDriver methods
+
+Browser Commands :
+====================
+1) get ()
+2) getTitle();
+3) getCurrentURL()
+4) close()
+5) quite()
+6) getPageSource();
+7) getTagName()
+8) getAttribute()
+9) getSize()
+10) getPosition()
+11) setSize()
+12) setPosition()
+===================================================================================================================
+Navigation Commands :
+=======================
+1) navigate().to()
+2) navigate().back()
+3) navigate().forward()
+4) navigate().refresh()
+===================================================================================================================
+Windows Commands :
+=========================
+1) getWindowHandle()
+2) getWindowHandles()
+3) switchTo().window()
+4) switchTo().frame(index/frameName/element)
+===================================================================================================================
+1) get() : driver.get(String_arg);
+
+
+
+
