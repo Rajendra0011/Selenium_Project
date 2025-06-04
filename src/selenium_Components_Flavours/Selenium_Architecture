@@ -1,0 +1,72 @@
+Selenium Architecture:
+======================================
+
+					!-----------------!				
+					! Search Context  ! ---> super-most interface
+					!-----------------!
+							!
+							!
+							!-----> extends
+							!
+					!-----------------!				
+					! 	WebDriver  	  !  sub-interface
+					!-----------------!
+							!
+							!
+							!-------> implements
+							!
+					!---------------------------------!				
+		-----<------! 	Selenium Remote WebDriver  	  ! -------------> Implementation class
+		!			!---------------------------------!				!
+		!															!
+		!								!							!							
+		!				extends			!							!  extends
+		!								!							!
+		!								!							!																											
+!-----------------!				!-----------------!					!-----------------!								              
+! 	Chrome        ! 			! 	FireFox		  !					!	Edge/Internet !
+!-----------------!				!-----------------!					!-----------------!					 		
+
+In selenium architecture Search context is super-most interface which contains abstract methods and inherited to
+WebDriver sub Interface.
+WebDriver is a subInterface which contains abstract method of search context as well as its own abstract methods
+All these methods are implemented in selenium Remote webDriver Implementations class.
+Selenium Remote webDriver Implementations class which implement all abstract methods of both the interfaces.
+Selenium Remote WebDriver class is extends to different browsers like chrome,firefox,IE edge. to run the application
+multiple browsers.
+i e. writing the test-cases on multiple browsers and run its on multiple browsers.
+We need to use runtime polymorphism by using up-casting in selenium.
+========================================================================================================================
+ChromeDriver ch= new ChromeDriver()----------chromedriver.exe
+FirefoxDriver f= new FireFoxDriver()---------geckodriver.exe
+EdgeDriver e= new EdgeDriver()----------------edgedriver.exe
+
+System.setProperty("webdriver.chrome.driver","exepath")
+System.setProperty("webdriver.edge.driver","exepath")
+System.setProperty("webdriver.gecko.driver","exepath")
+
+WebDriver c= new ChromeDriver()----------chromedriver.exe
+WebDriver f= new FireFoxDriver()---------geckodriver.exe
+WebDriver e= new EdgeDriver()----------------edgedriver.exe
+========================================================================================================================
+How to Open browser in selenium :
+===================================
+To open browser in selenium we need to set the path of browser .exe file, By  Using System class which contain
+static method setProperty which accept two parameter (Browser name and browser exe file path) after we need to create
+object of chrome driver class and store it in one reference variable with reference of web-driver interface.
+Then we need to call get method of webdriver interface which accept url and open new page on browser.
+
+public class OpenBrowser(){
+
+public static void main(String args[]){
+
+System.setProperty("webdriver.chrome/edge/gecko.driver","//exe-filepath")'
+WebDriver driver = new ChromeDriver();
+driver.get("https://www.google.com");
+		}
+}
+
+
+
+
+ 											

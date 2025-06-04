@@ -35,6 +35,26 @@ Windows Commands :
 4) switchTo().frame(index/frameName/element)
 ===================================================================================================================
 1) get() : driver.get(String_arg);
+This method is used to LOAD new page in Current Browser Window.
+Which accept String as a Parameter
+
+2)getTitle():
+This method is used to fetch the current page Title.
+It return type is String value.
+ String title=driver.getTitle();
+ 
+ 3)close();
+ This method Closes Current windows opened by the WebDriver
+ driver.close();
+ 
+ 4) quite():
+ This method Closes all windows opened by the WebDriver
+ driver.quite();
+ 
+ 5)getCurrentURL()
+ 
+
+
 
 
 

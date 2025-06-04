@@ -1,0 +1,25 @@
+Selenium
+=======================
+Advantages of Selenium:
+=======================
+1) Selenium completely free to use means Open Source .
+2) Selenium supports all major browsers like Chrome,Firefox,Safari,Edge.
+3) We can test different operating system.(Windows ,Mac,Linux).
+4) It support multiple programming language like Java,Python,C#,java,Ruby,JavaScript,Kotlin.
+5) It support web and mobile Testing
+				-> It Can be Integrated With tool like
+					i) Appium : for mobile testing
+					ii)Selenium -testNg
+6) Easy integration
+7) CI/CD tool
+8) Test Framework
+9) Report Tools Extent Report
+
+===================================================================================================================
+Dis-Advantages of Selenium:
+=======================
+1) By using selenium automation tool we can't automate windows based applications.
+2) We can't automate "Stand-Alone " applications.'
+3) We can't automate "Captcha" which is present on webpage
+4) selenium automation tool will not support file uploading.
+5) we can not handle window based popup.

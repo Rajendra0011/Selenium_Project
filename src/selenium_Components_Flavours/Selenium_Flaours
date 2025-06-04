@@ -1,0 +1,22 @@
+What are the Selenium components
+=====================================
+1) Selenium IDE
+2) Selenium Remote Control
+3) Selenium WebDriver
+4) Selenium Grid
+5) Selendriod
+===============================================================================================================
+1) Selenium IDE
+=================
+-> We can run script in only on FireFox Browser
+-> We can not do compatibility Testing
+===============================================================================================================
+2) Selenium Remote Control
+=================================
+We can write script using only java language.
+We can do compatibility Testing
+
+3) Selenium WebDriver
+=================================
+We can write script using multiple language.
+We can do compatibility Testing.
