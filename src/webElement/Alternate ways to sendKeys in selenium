@@ -1,0 +1,28 @@
+Alternate ways to sendKeys in selenium
+============================================
+1) sendKeys()
+====================
+This method used to enter the value in the text field.
+
+			Syntax : driver.findElement(By.id()).sendKeys();
+			
+			
+Alternate ways to sendKeys in selenium
+1) Using javascriptExecutor interface
+2) Using Actions Class
+3) Robot Class
+
+1) Using JavaScripExecutor interface
+============================================
+		WebElement emailId = driver.findElement(By.id("email"));
+		WebElement password = driver.findElement(By.id("pass"));
+//===============================================================================================================		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].value='karhaleraju@gmail.com'; arguments[1].value='karhaleraju';", 
+				emailId,password);
+//===============================================================================================================
+2) Using Actions Class
+
+			Actions ac = new Actions(driver);
+		ac.sendKeys(emailId, "karhaleraju@gmail.com").perform();
+		ac.sendKeys(password, "karhaleraju@gmail.com").perform();

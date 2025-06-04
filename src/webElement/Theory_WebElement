@@ -1,0 +1,51 @@
+WebElement:
+==================================
+WebElement is an interface used to perform action on element present on web-page
+==============================================================================================================
+WebElement interface having different kind of methods :
+==============================================================================================================
+1) sendKeys()
+2) click()
+3) clear()
+4) getText()
+5) isEnabled()
+6) isDisplayed()
+7) isSelected();
+==============================================================================================================
+1) sendKeys()
+====================
+This method used to enter the value in the text field.
+
+			Syntax : driver.findElement(By.id()).sendKeys();
+			
+			
+Alternate ways to sendKeys in selenium
+1) Using javascriptExecutor interface
+2) Using Actions Class
+3) Robot Class			
+==============================================================================================================
+2) Click()
+====================
+This method is used to click on buttons like radio button,links
+			Syntax : driver.findElement(By.id()).click();
+==============================================================================================================
+3)Clear()
+====================
+This is method is used to clear the value in the text field.
+			Syntax : driver.findElement(By.id()).clear();
+==============================================================================================================
+4)isEnabled()
+====================
+This method is used to verify is element enabled or disabled.
+if element is enabled it return true otherwise it return false.
+==============================================================================================================
+5)isDisplayed()
+====================
+This method is used to verify is element present or not.
+Return type of isDisplayed method is boolean.
+==============================================================================================================
+6) isSelected()
+====================
+This method is used to verify radio button or checkbox selected or not.
+Return type of isSelected method is boolean.
+==============================================================================================================
