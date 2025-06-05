@@ -1,0 +1,76 @@
+ListBox:
+================================
+How to handle ListBox
+Step 1:
+========
+To handle the listBox in selenium first we need to identify listBox which is present on web-page and store
+in one reference variable.
+Step 2:
+=========
+Then Create object of Select class which accept webElement arguments.
+			
+			Select  s= new Select(WebElement R);
+			
+Step 3:
+==========
+Then use of Select Class method to Select class options.
+=============================================================================================================
+Following are the Select Class Methods
+========================================
+1) selectByValue()
+2) selectByVisibleText()
+3) selectByIndex()
+4) getFirstSelectedOption()
+5) getAllSelectedOptions()
+6) getOptions()
+7) isMultiple()
+==============================================================================================================
+To deSelect option
+======================
+1) deselectByIndex()
+2) deselectByValue()
+3) deselectByVisibleText()
+4) deselectAll()
+==============================================================================================================
+Note : Above methods we can use only multiSelectable listBox
+==============================================================================================================
+1) getFirstSelectedOption()
+This method is used to get firstSelected option.
+==============================================================================================================
+2) getAllSelectedOption()
+This method is used get all selected options present in listBox
+Return type of getAllSelectedOption is List<WenElement>
+==============================================================================================================
+3) getOptions()
+This method is used to get All options present in listBox as an output
+Return Type of getOptions() method is list of WebElement.
+List<WebElement>
+getOptions() method Return address of the present on ListBox.
+==============================================================================================================
+4) isMultiple()
+This method is used to verify ListBox are single Selectable or multiSelectable.
+==============================================================================================================
+5)selectByIndex()
+This method is used to select the required option based on Index, Which is sequential number which start from zero
+==============================================================================================================
+6) selectByValue()
+This method is used to select the required option based on attribute value.
+==============================================================================================================
+7) selectByVisibleText()
+This method is used to select the required option based on actual-name which is displayed in the application.
+==============================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -26,12 +26,12 @@ public class Example_sendKeys_Methods {
 //		js.executeScript("arguments[0].value='karhaleraju@gmail.com'; arguments[1].value='karhaleraju';", 
 //				emailId,password);
 //===============================================================================================================		
-//		2) Using Actions Class
-		
+//		2) Using Actions Class	
 		Actions ac = new Actions(driver);
 		ac.sendKeys(emailId, "karhaleraju@gmail.com").perform();
 		ac.sendKeys(password, "karhaleraju@gmail.com").perform();
 		
+//     3) Using Robot Class	
 		
 		Thread.sleep(5000);
 		driver.quit();

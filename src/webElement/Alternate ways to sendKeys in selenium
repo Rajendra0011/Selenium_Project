@@ -6,8 +6,9 @@ This method used to enter the value in the text field.
 
 			Syntax : driver.findElement(By.id()).sendKeys();
 			
-			
-Alternate ways to sendKeys in selenium
+//===============================================================================================================		
+Alternate ways to sendKeys in Selenium
+=======================================
 1) Using javascriptExecutor interface
 2) Using Actions Class
 3) Robot Class
@@ -26,3 +27,5 @@ Alternate ways to sendKeys in selenium
 			Actions ac = new Actions(driver);
 		ac.sendKeys(emailId, "karhaleraju@gmail.com").perform();
 		ac.sendKeys(password, "karhaleraju@gmail.com").perform();
+//===============================================================================================================
+3) Using Robot Class

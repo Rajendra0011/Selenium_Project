@@ -1,0 +1,20 @@
+ScreenShot
+===============================================
+How to capture ScreenShot Using selenium
+===============================================
+To Capture Screenshot using Selenium webDriver type driver Object into takesScreenshot interface.
+				((TakesScreenshot) driver)
+Then we need to create call method as getScreenShotAS() here we need to pass one parameter.
+OutputType.File
+				((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+				
+After execution this statement selenium capture the ScreenShot store in a local memory.
+If we want to move that screenshot local memory to our desired location, Then we need to call static method 
+Copy(-,-).
+Which is present in Filehandler class which accept two parameter path of source and path of destination.
+
+Filehandler.copy(--,---); 
+
+
+
+
