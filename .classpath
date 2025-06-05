@@ -13,5 +13,18 @@
 	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/selenium-java-3.141.0/libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/selenium-java-3.141.0/libs/okhttp-3.11.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/selenium-java-3.141.0/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/rajen/Downloads/poi-bin-3.17-20170915/poi-3.17/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

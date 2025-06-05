@@ -1,0 +1,52 @@
+Parametrization :
+=================================
+Fetching data from external source using it in selenium test script is known as Parametrization.
+It can be achieve using excel sheet csv file, TestNG data provider.
+
+How To fetch data from excelSheet
+Step 1:
+=======
+To fetch data from excelSheet first we need to configure 'apache-poi' jar file into our project.
+Step 2:
+=======
+Create an excelSheet with same data save it any drive
+Step 3: 
+=======
+To Fetch that file from localDrive we need to create "FileInputStream" Class with excelSheet as an input.
+Step 4:
+========
+To open ExcelSheet we need to use static method [create]  which is present in workbookfactory class and pass
+FileInputStram Class reference.
+
+Step 5:
+========
+To open a specific sheet in excel file we need to use method getSheet() which accept sheet name as an input.
+
+Step 6:
+========
+To identify specific sheet in row we need to use getRow() method which accept index as input.
+To identify specific cell in row we need to call getCell() method.
+To fetch String type information we need to call getStringcellValue().
+To fetch Numeric type information we need to call getNumericcellValue().
+To fetch Boolean type information we need to call getBooleancellValue().
+========================================================================================================
+
+getLastRowNum():
+===================
+to get total row size in a sheet.
+To find total number of row in sheet we need to call function getLastRowNum();
+====================================================================================================
+getLastCellNum():
+===================
+This function return total number of cell in Row.
+
+getLastCellNum()-1;
+=========================
+This function Return last cell Index in a Row.
+
+=======================================================================================================
+
+
+
+
+
