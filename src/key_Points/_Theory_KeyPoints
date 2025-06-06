@@ -1,0 +1,24 @@
+Key Points:
+==================================================================
+Difference Between findElement and FindElements Methods
+=======================================================================================================================
+FindElement()												|			FindElements()
+=======================================================================================================================
+FindElement method is used to access single weBElement		| FindElements method return list of all matching element.
+on WebPage.													| The return type of FindElements method is List of webElement
+The Return type of FindElement method is single WebElement	| The FindElements method return empty list when element is not
+The FindElement throw No SuchElement exception when element	| available on WebPage.
+is not available on WebPage.
+=======================================================================================================================
+
+=======================================================================================================================
+					Action									|			Actions
+=======================================================================================================================
+FindElement method is used to access single weBElement		| FindElements method return list of all matching element.
+on WebPage.													| The return type of FindElements method is List of webElement
+The Return type of FindElement method is single WebElement	| The FindElements method return empty list when element is not
+The FindElement throw No SuchElement exception when element	| available on WebPage.
+is not available on WebPage.
+=======================================================================================================================
+
+

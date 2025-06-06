@@ -1,0 +1,84 @@
+Actions Class :
+=================================
+To handle the drop down element or Mouse Over action we need to use actions Class methods.
+identify the drop/down or weBElement from the webpage store it in one variable 
+then create a object of actions class which accept the WebDriver reference.
+after we can call the all actions class methods.
+================================================================================
+			Actions ac = new Actions(WebDriver reference)
+================================================================================
+
+Following are the Actions Class methods.
+================================================================================
+Mouse Actions:
+
+1) moveToElement(WebElement target)	
+====================================
+Moves mouse to the center of the given element. Used for hover actions.
+=================================================================================
+2) click()
+===========	
+Clicks at the current mouse location.
+=================================================================================
+3) click(WebElement element)	
+Clicks on the specified element.
+==================================================================================
+4) contextClick()	
+Performs a right-click at the current mouse location.
+===================================================================================
+contextClick(WebElement element)	
+Right-click on the specified element.
+====================================================================================
+doubleClick()	
+Double-clicks at the current mouse location.
+====================================================================================
+doubleClick(WebElement element)	
+Double-clicks on the specified element.
+====================================================================================
+clickAndHold()	
+Clicks (without releasing) at the current location.
+=====================================================================================
+clickAndHold(WebElement element)	Clicks (without releasing) on the given element.
+release()	Releases the mouse click. Used after clickAndHold().
+=====================================================================================
+release(WebElement element)	Releases on a specific element.
+======================================================================================
+Keyboard Action
+
+sendKeys(CharSequence... keys)	
+Sends keys to the currently focused element.
+======================================================================================
+sendKeys(WebElement element, CharSequence... keys)	
+Sends keys to a specific element.
+======================================================================================
+keyDown(Keys key)	
+Presses and holds a key (e.g., Keys.CONTROL)
+======================================================================================
+keyDown(WebElement element, Keys key)	
+Same as above but for a specific element.
+======================================================================================
+keyUp(Keys key)	
+Releases a previously held key
+======================================================================================
+keyUp(WebElement element, Keys key)
+Releases a key on specific element.
+======================================================================================
+dragAndDrop(WebElement source, WebElement target)	Drags source element and drops it on the target.
+clickAndHold().moveToElement().release()	Another way to perform drag-and-drop manually.
+
+Execution Methods:
+build()	Builds a composite action (used in chains).
+perform()	Executes the action.
+======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+

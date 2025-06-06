@@ -1,0 +1,84 @@
+Popups:
+============================
+Popup are small or separate window which will displayed when we perform action on any component present on WebPage.
+
+These types of popups can be handled by Selenium directly, but sometimes we need to use third-party tools 
+to handle certain popups.
+
+If we are able to inspect the elements present in a popup, then we can handle that popup directly using Selenium.
+If we are unable to inspect the elements present in a popup we need to use third-party tools to handle certain popups.
+=====================================================================================================================
+Types of PopUps:
+1) Hidden division Popup
+2) Alert Popup
+3) ChildWindow Popup.
+4) Authentication Popup.
+5) FileUpload Popup
+5) FileDownload popup
+=====================================================================================================================
+1) Hidden division Popup:
+=========================
+These types of popup are colourfull.
+We can inspect the element present on a webpage
+So we can handle these types of popup directly using Selenium.
+No need to switch,
+======================================================================================================================
+2) Alert Popup
+=========================
+We can't inspect element present on alert popup.
+TThese types of popups usually contain buttons like OK, Cancel, text messages, or sometimes symbols like ? or !. 
+To handle alert popups, we need to switch Selenium’s focus from the main page to the alert popup using 
+the following syntax: 
+						Alert alt = driver.switchTo().alert();
+
+======================================================================================================================
+Alert is an interface in Selenium that provides the following abstract methods:
+1) accept() – used to click on the OK button
+2) dismiss() – used to click on the Cancel button
+3) getText() – used to retrieve the text present on the popup.
+
+		Alert alt=driver.switchTo().alert();
+			  alt.accept();
+			  alt.dismiss()
+			String text= alt.getText();
+
+======================================================================================================================
+Child Browser Popup or child Window Popup
+=========================================
+We can inspect element present on popup.
+These types of popups usually contain an address bar, as well as maximize, minimize, and close options — 
+just like a regular browser window.
+Such popups are referred to as Child Browser Popups or Child Windows
+
+Procedure to handle Child Browser Popup or child Window Popup
+=================================================================
+To handle child browser popup we need to switch selenium focus from main page to child browser popup
+using following syntax:
+        driver.switchTo().window(windowhandle);
+
+Get the main window handle using driver.getWindowHandle()
+Get all window handles using driver.getWindowHandles()
+Switch to the child window using driver.switchTo().window(childWindowHandle)
+======================================================================================================================
+4) Authentication Popup.
+These type of popup displayed after page load.
+We can't inspect the element present in popup.
+======================================================================================================================
+
+5) file Upload
+======================================================================================================================
+6) File download
+======================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+

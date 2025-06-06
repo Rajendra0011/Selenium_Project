@@ -1,0 +1,25 @@
+Iframe :
+================================
+Displaying a webPage as part of another WebPage is known as Iframe.
+
+How to Handle the iframe using in selenium :
+==============================================
+To handle the iframe using selenium we need switch selenium focus from main page to iframe
+By Using 
+			Syntax : driver.switchTo().frame(index/id/name/webElment);
+====================================================================================================================
+to identify iframe using
+1) index
+2) id
+3) name
+4) WebElement.
+====================================================================================================================
+Once the action performed on component present in iframe selenium focus will not navigate to main page.
+
+To Switch selenium focus iframe to main Page we need to use Two Methods
+			1) parentFrame()
+			2) defaultcontent();
+			
+If we use driver.switchTo().parentFrame() then it will navigate to immediate parent frame
+If we use driver.switchTo().defaultcontent(); then it will navigate to main Page.
+====================================================================================================================
