@@ -1,21 +1,25 @@
-Parametrization :
+Parameterization  :
 =================================
-Fetching data from external source using it in selenium test script is known as Parametrization.
-It can be achieve using excel sheet csv file, TestNG data provider.
+Fetching data from external source using it in selenium test script is known as Parameterization.
+It can be achieve using EXCEL sheet CSV file, TestNG data provider.
 
 How To fetch data from excelSheet
+=================================
 Step 1:
 =======
 To fetch data from excelSheet first we need to configure 'apache-poi' jar file into our project.
+
 Step 2:
 =======
-Create an excelSheet with same data save it any drive
+Create an excelSheet with same data save it any drive.
+
 Step 3: 
 =======
 To Fetch that file from localDrive we need to create "FileInputStream" Class with excelSheet as an input.
+
 Step 4:
 ========
-To open ExcelSheet we need to use static method [create]  which is present in workbookfactory class and pass
+To open ExcelSheet we need to use static method [create]  which is present in workBookfactory class and pass
 FileInputStram Class reference.
 
 Step 5:

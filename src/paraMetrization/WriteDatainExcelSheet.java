@@ -36,8 +36,10 @@ public class WriteDatainExcelSheet {
 				Row row1=sheet.createRow(i);
 				
 				for(int j=0;j<row;j++) {
-					Cell cell1=row1.createCell(j);				
+					Cell cell1=row1.createCell(j);	
+					
 					Object value = empData[i][j];
+					
 					if (value instanceof String)
 						cell1.setCellValue((String) value);
 					if (value instanceof Integer)
